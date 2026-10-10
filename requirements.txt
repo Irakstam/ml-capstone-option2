@@ -1,0 +1,11 @@
+# Tested with Python 3.11.15 on Linux (CPU).
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+matplotlib==3.10.7
+tensorflow-cpu==2.20.0
+keras==3.11.3
+nbformat==5.10.4
+nbclient==0.10.2
+nbconvert==7.16.6
+ipykernel==6.30.1

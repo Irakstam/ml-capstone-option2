@@ -1,0 +1,119 @@
+{
+  "dataset": {
+    "name": "adult",
+    "version": 2,
+    "openml_id": "1590",
+    "rows": 48842,
+    "features": 14,
+    "class_counts": {
+      "<=50K": 37155,
+      ">50K": 11687
+    },
+    "missing_by_column": {
+      "workclass": 2799,
+      "occupation": 2809,
+      "native-country": 857
+    }
+  },
+  "seed": 42,
+  "train_rows": 39073,
+  "test_rows": 9769,
+  "test_class_counts": [
+    7431,
+    2338
+  ],
+  "cv_f1_scores": [
+    0.6714456391875747,
+    0.6664711058961572,
+    0.6528189910979229,
+    0.6454253142356037,
+    0.6516525299795262
+  ],
+  "cv_f1_mean": 0.6575627160793569,
+  "cv_f1_std": 0.009765702361915582,
+  "models": {
+    "Logistic regression": {
+      "F1": 0.6561754887935145,
+      "Accuracy": 0.8523902139420616,
+      "Precision": 0.7413793103448276,
+      "Recall": 0.5885372112917023,
+      "False positives": 480,
+      "False negatives": 962
+    },
+    "Neural network": {
+      "F1": 0.6808806488991889,
+      "Accuracy": 0.8590439144231754,
+      "Precision": 0.7430450177035913,
+      "Recall": 0.6283147989734816,
+      "False positives": 508,
+      "False negatives": 869
+    }
+  },
+  "logistic_confusion_matrix": [
+    [
+      6951,
+      480
+    ],
+    [
+      962,
+      1376
+    ]
+  ],
+  "neural_confusion_matrix": [
+    [
+      6923,
+      508
+    ],
+    [
+      869,
+      1469
+    ]
+  ],
+  "network_fit_rows": 35165,
+  "network_validation_rows": 3908,
+  "network_input_features": 105,
+  "logistic_input_features": 105,
+  "network_parameters": 8897,
+  "logistic_parameters": 106,
+  "network_epochs": 5,
+  "best_epoch": 2,
+  "history": {
+    "accuracy": [
+      0.8182852268218994,
+      0.8495094776153564,
+      0.8533769249916077,
+      0.8541163206100464,
+      0.8564197421073914
+    ],
+    "loss": [
+      0.3742239475250244,
+      0.32100287079811096,
+      0.3144948482513428,
+      0.3114032447338104,
+      0.3083963692188263
+    ],
+    "val_accuracy": [
+      0.8497952818870544,
+      0.854145348072052,
+      0.8533776998519897,
+      0.8538894653320312,
+      0.8533776998519897
+    ],
+    "val_loss": [
+      0.3296669125556946,
+      0.3282790184020996,
+      0.32875576615333557,
+      0.3305339515209198,
+      0.33169060945510864
+    ]
+  },
+  "python": "3.11.15",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.7",
+    "keras": "3.11.3",
+    "tensorflow-cpu": "2.20.0"
+  }
+}
